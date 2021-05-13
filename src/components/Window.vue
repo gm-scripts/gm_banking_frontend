@@ -31,10 +31,10 @@ export default defineComponent({
 
 <style lang="sass">
 .window
-  background-color: #4a4a55
+  background-color: var(--bg-primary);
   user-select: none
-  width: calc(var(--scale) * 90vh)
-  height: calc(var(--scale) * 60vh)
+  width: calc(var(--scale) * 110vh)
+  height: calc(var(--scale) * 70vh)
   position: absolute
   top: 50%
   left: 50%
@@ -48,9 +48,9 @@ export default defineComponent({
   .gm-frame
     position: absolute
     z-index: 2
-    font-size: 2.25vh
-    width: calc(100% - 2px)
-    color: white
+    font-size: calc(var(--scale) * 2.25vh)
+    width: calc(100%)
+    color: var(--text-primary);
     padding: calc(var(--scale) * 0.25vh)
     cursor: move
     text-align: center

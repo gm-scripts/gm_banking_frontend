@@ -1,9 +1,15 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Window from "./components/Window.vue";
+import { cssConfig, fetchConfig } from "./ts/data/FetcherFunctions";
 
 export default defineComponent({
-  // setup() {},
+  setup() {
+    fetchConfig();
+    return {
+      cssConfig,
+    };
+  },
   components: {
     Window,
   },
@@ -11,7 +17,7 @@ export default defineComponent({
 </script>
 
 <template lang="pug">
-.ui-container
+.ui-container( :style="cssConfig" )
   Window
 </template>
 
