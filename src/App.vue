@@ -1,30 +1,23 @@
-<template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+<script lang="ts">
+import { defineComponent } from "vue";
+import Window from "./components/Window.vue";
+
+export default defineComponent({
+  // setup() {},
+  components: {
+    Window,
+  },
+});
+</script>
+
+<template lang="pug">
+.ui-container
+  Window
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="sass">
+@import "./assets/root.sass";
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+.ui-container
+  --scale: 1
 </style>
