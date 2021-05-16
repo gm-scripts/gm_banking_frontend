@@ -1,17 +1,20 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import HistoryIcon from "./icons/History.vue";
+import DashboardIcon from "./icons/Dashboard.vue";
 
 export default defineComponent({
   // setup() {},
   components: {
     HistoryIcon,
+    DashboardIcon,
   },
 });
 </script>
 
 <template lang="pug">
 .sidebar
+  DashboardIcon
   HistoryIcon
 </template>
 
