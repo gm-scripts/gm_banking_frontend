@@ -2,12 +2,14 @@
 import { defineComponent } from "vue";
 import HistoryIcon from "./icons/History.vue";
 import DashboardIcon from "./icons/Dashboard.vue";
+import DepositIcon from "./icons/Deposit.vue";
 
 export default defineComponent({
   // setup() {},
   components: {
     HistoryIcon,
     DashboardIcon,
+    DepositIcon,
   },
 });
 </script>
@@ -16,6 +18,7 @@ export default defineComponent({
 .sidebar
   DashboardIcon
   HistoryIcon
+  DepositIcon
 </template>
 
 <style lang="sass">
@@ -40,6 +43,6 @@ export default defineComponent({
       background-color: var(--bg-tertiary-lighter-b)
       transition: background-color 0.15s
       svg
-        transform: scale(1.15)
+        // transform: scale(1.05)
         transition: transform 0.15s
 </style>

@@ -76,7 +76,7 @@ export default defineComponent({
 <style lang="sass">
 
 #dashboard
-  $timer-colors: 5s
+  $timer-colors: 10s
   $timer-blocks: 3s
   .sq
     animation: switch-cols $timer-colors linear 0s infinite normal
@@ -89,14 +89,14 @@ export default defineComponent({
     animation: switch-cols $timer-colors linear 0s infinite normal
   &:hover
     .sq1, .sq2
-      --animacol1: var(--brand)
-      --animacol2: var(--brand-sec)
+      --animacol1: var(--brand-sec)
+      --animacol2: var(--brand)
       animation: resize-blocks-top $timer-blocks linear 0s infinite normal
     .sq2
       animation-direction: reverse
     .sq3, .sq4
-      --animacol1: var(--brand-sec)
-      --animacol2: var(--brand)
+      --animacol1: var(--brand)
+      --animacol2: var(--brand-sec)
       animation: resize-blocks-bottom $timer-blocks linear 0s infinite normal
     .sq3
       animation-direction: reverse
