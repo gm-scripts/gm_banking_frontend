@@ -10,11 +10,8 @@ export default defineComponent({
 .icon#deposit
   svg(
     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns="http://www.w3.org/2000/svg"
     xml:space="preserve"
     width="100%"
-    xmlns:vectornator="http://vectornator.io"
     version="1.1"
     viewBox="0 0 600 600"
   )
@@ -71,11 +68,28 @@ export default defineComponent({
 #deposit
   #bankbox
   #downarrow
+    opacity: 1
+    transform: none
+    transition: opacity 0.2s
   #dollarbill-a
+    opacity: 1
+    transition: opacity 0s 0.5s
   #dollarbill-b
+    transition: transform 0.5s, opacity 0s 0.5s
+    transform: translateY(0)
+    opacity: 0
   &:hover
     #bankbox
     #downarrow
+      transform: translateY(50%)
+      opacity: 0
+      transition: transform 0.5s, opacity 0.4s
     #dollarbill-a
+      transform: translateY(33.5%)
+      opacity: 0
+      transition: transform 0.5s, opacity 0.5s 0.75s
     #dollarbill-b
+      transform: translateY(-50%)
+      transition: transform 0s 0.75s, opacity 0s 0.75s
+      opacity: 1
 </style>
