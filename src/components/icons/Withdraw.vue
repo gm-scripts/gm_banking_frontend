@@ -89,7 +89,7 @@ export default defineComponent({
     #dollarbill-a
       transform: translateY(-25%)
       opacity: 0
-      transition: transform 1s, opacity 0.5s 1s
+      transition: transform 0.8s, opacity 0.3s 0.85s
     #dollarbill-b
       opacity: 1
       transition: opacity 0.5s 1.75s

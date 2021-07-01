@@ -4,6 +4,7 @@ import HistoryIcon from "./icons/History.vue";
 import DashboardIcon from "./icons/Dashboard.vue";
 import DepositIcon from "./icons/Deposit.vue";
 import WithdrawIcon from "./icons/Withdraw.vue";
+import TransferIcon from "./icons/Transfer.vue";
 
 export default defineComponent({
   // setup() {},
@@ -12,6 +13,7 @@ export default defineComponent({
     DashboardIcon,
     DepositIcon,
     WithdrawIcon,
+    TransferIcon,
   },
 });
 </script>
@@ -22,6 +24,7 @@ export default defineComponent({
   HistoryIcon
   DepositIcon
   WithdrawIcon
+  TransferIcon
 </template>
 
 <style lang="sass">
