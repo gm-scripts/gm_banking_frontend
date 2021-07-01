@@ -5,6 +5,7 @@ import DashboardIcon from "./icons/Dashboard.vue";
 import DepositIcon from "./icons/Deposit.vue";
 import WithdrawIcon from "./icons/Withdraw.vue";
 import TransferIcon from "./icons/Transfer.vue";
+import BillsIcon from "./icons/Bills.vue";
 
 export default defineComponent({
   // setup() {},
@@ -14,6 +15,7 @@ export default defineComponent({
     DepositIcon,
     WithdrawIcon,
     TransferIcon,
+    BillsIcon,
   },
 });
 </script>
@@ -25,6 +27,7 @@ export default defineComponent({
   DepositIcon
   WithdrawIcon
   TransferIcon
+  BillsIcon
 </template>
 
 <style lang="sass">
